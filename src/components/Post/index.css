@@ -1,0 +1,130 @@
+.postMain {
+  display: flex;
+  flex-direction: column;
+  margin: 16px;
+  width: 95vw;
+  /* border: 2px solid black; */
+}
+
+.postDate {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 16px;
+}
+
+.date {
+  background-color: rgb(236, 233, 233);
+  font-size: large;
+  margin: 8px;
+  padding: 8px 12px;
+  border-left: 1px solid rgb(248, 138, 28);
+  color: rgb(65, 63, 63);
+  font-weight: 600;
+}
+
+.day {
+  font-size: 2rem;
+  padding: 2px 6px;
+  font-weight: 700;
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+  width: 97%;
+  /* border: 2px solid yellow; */
+  margin: 0px auto 16px auto;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.toolbar {
+  /* border: 2px solid red; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 60px;
+}
+
+.left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(248, 138, 28);
+  flex-direction: row;
+}
+
+.postHeading {
+  color: black;
+  font-size: 2rem;
+  font-weight: 600;
+  margin: 0px 4px;
+}
+
+.infoBar {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.heading {
+  padding: 20px;
+  font-weight: 700;
+}
+
+.info {
+  padding: 20px;
+  font-weight: 600;
+}
+
+.gridContainer {
+  width: 70%;
+  margin: 8px auto;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  padding: 10px;
+}
+
+.expandButton {
+  background-color: inherit;
+  border: none;
+}
+
+.expandButton:focus {
+  outline: none;
+}
+
+.editBtn,
+.deleteBtn {
+  background-color: inherit;
+  outline: none;
+  border: none;
+}
+
+@media only screen and (max-width: 670px) {
+  .postHeading {
+    font-size: 1rem;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .heading {
+    padding: 10px;
+  }
+  .info {
+    padding: 10px;
+  }
+}
+
+@media only screen and (max-width: 730px) {
+  .gridContainer {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .gridContainer {
+    grid-template-columns: auto auto;
+  }
+}

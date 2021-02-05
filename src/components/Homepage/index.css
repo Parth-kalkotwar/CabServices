@@ -1,0 +1,36 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  /* border: 2px solid red; */
+}
+
+.Appbar {
+  display: flex;
+  /* border: 2px solid green; */
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.mainHeading {
+  padding: 0px 16px;
+  color: rgb(248, 138, 28);
+}
+
+.createTransfer {
+  padding: 8px;
+  font-size: larger;
+  margin: 28px;
+  border-radius: 10%;
+  background-color: white;
+  border: 2px solid rgb(248, 138, 28);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  color: rgb(248, 138, 28);
+}
+
+.createTransfer:hover {
+  color: white;
+  background-color: rgb(248, 138, 28);
+}
